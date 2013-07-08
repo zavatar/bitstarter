@@ -89,8 +89,10 @@ if(require.main == module) {
     var restHtml = buildfn(program.checks);
     if (program.file)
 	restHtml(fs.readFileSync(program.file), '');
-    if (program.url)
+    else if (program.url)
 	rest.get(program.url).on('complete', restHtml);
+    else
+	restHtml(fs.readFileSync(HTMLFILE_DEFAULT), '');
 } else {
     exports.checkHtmlFile = checkHtmlFile;
 }
