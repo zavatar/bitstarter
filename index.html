@@ -26,6 +26,9 @@
          border: solid rgba(255,255,255,0.2);
          /*border-right: 4px solid white;*/
         }
+       .linediv-c {
+         border: 4px solid;
+       }
        .linediv-r {
          border: solid rgba(255,255,255,0.2);
          /*border-left: 4px solid white;*/
@@ -33,13 +36,16 @@
       }
 
       /* Landscape phones and down */
-      @media (max-width: 480px) { 
+      @media (max-width: 980px) { 
        .copy {
          padding: 2.5% 10%; /*https://developer.mozilla.org/en-US/docs/Web/CSS/padding*/
          border: solid rgba(0,0,0,0.2);
        }
        .linediv-l {
          border-bottom: 1px white solid;
+       }
+       .linediv-c {
+         border: 1px solid;
        }
        .linediv-r {
          border-top: 1px white solid;
@@ -71,11 +77,14 @@
         padding: 2.5% 0%;
       }
       .order {
-        padding: 2% 0%;
+        padding: 0% 0% 2%;
       }
       .actions {
         background-color: #343434;
         padding: 3% 0%;
+      }
+      .prog {
+        padding: 2% 0% 0%;
       }
       .video, .thermometer, .order, .social, .statistics {
         text-align: center;
@@ -182,7 +191,7 @@
             </div>
           </div>
           <div class="row-fluid">
-            <div class="span10 offset1">
+            <div class="span10 offset1 prog">
               <!-- Bootstrap progress bar -->
               <!-- http://twitter.github.io/bootstrap/components.html#progress -->
               <div class="thermometer progress active">
