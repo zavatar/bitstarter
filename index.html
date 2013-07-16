@@ -10,28 +10,33 @@
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic"
           rel="stylesheet" type="text/css">
-    <style type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,300italic,400italic,600italic,700italic"
+          rel="stylesheet" type="text/css">
 
+    <style type="text/css">
+      /* CSS media queries: https://developer.mozilla.org/en-US/search?q=%40media*/
       /* Large desktop */
       @media (min-width: 980px) { 
         body {
          padding-top: 60px;
         }
        .linediv-l {
-         border-right: 1px white solid;
+         border: solid rgba(255,255,255,0.2);
+         /*border-right: 4px solid white;*/
         }
        .linediv-r {
-         border-left: 1px white solid;
+         border: solid rgba(255,255,255,0.2);
+         /*border-left: 4px solid white;*/
        }
       }
 
       /* Landscape phones and down */
       @media (max-width: 480px) { 
        .copy {
-         padding: 2.5% 10%;
+         padding: 2.5% 10%; /*https://developer.mozilla.org/en-US/docs/Web/CSS/padding*/
+         border: solid rgba(0,0,0,0.2);
        }
        .linediv-l {
          border-bottom: 1px white solid;
@@ -45,10 +50,10 @@
 
       /* Main body and headings */
       body{
-        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        font-family: 'Open Sans', cursive;
       }
       .heading, .subheading {
-        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        font-family: 'Ubuntu', cursive;
         text-align: center;
       }
       p.lead {
@@ -104,6 +109,7 @@
 
     <!-- Mobile-friendly navbar adapted from example. -->
     <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
+    <!-- Refer code in bootstrap-combined.no-icons.min.css -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -205,17 +211,16 @@
         </div>
         <div class="span5 copy">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
+            Description 1.Description 1.Description 1.Description 1.
+            Description 1.Description 1.Description 1.Description 1.
+            Description 1.Description 1.Description 1.Description 1.
+            Description 1.Description 1.Description 1.Description 1.
+            Description 1.Description 1.Description 1.Description 1.
+            Description 1.Description 1.Description 1.Description 1.
+            Description 1.Description 1.Description 1.Description 1.
+            Description 1.Description 1.Description 1.Description 1.
+            Description 1.Description 1.Description 1.Description 1.
+            Description 1.Description 1.Description 1.Description 1.
           </p>
         </div>
       </div>
@@ -223,17 +228,16 @@
       <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
+            Description 2.Description 2.Description 2.Description 2.
+            Description 2.Description 2.Description 2.Description 2.
+            Description 2.Description 2.Description 2.Description 2.
+            Description 2.Description 2.Description 2.Description 2.
+            Description 2.Description 2.Description 2.Description 2.
+            Description 2.Description 2.Description 2.Description 2.
+            Description 2.Description 2.Description 2.Description 2.
+            Description 2.Description 2.Description 2.Description 2.
+            Description 2.Description 2.Description 2.Description 2.
+            Description 2.Description 2.Description 2.Description 2.
           </p>
         </div>
         <div class="span5 asset">
